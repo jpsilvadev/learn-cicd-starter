@@ -38,13 +38,14 @@ func TestGetAPIKey(t *testing.T) {
 		if c.expectedError {
 			if err == nil {
 				t.Errorf("GetAPIKey(%v) expected an error but got none", c.input)
-			}	
+			}
 		} else {
 			if err != nil {
 				t.Errorf("GetAPIKey(%v) unexpected error: %v", c.input, err)
 			}
 			if result != c.expectedKey {
 				t.Errorf("GetAPIKey(%v) = %v; want %v", c.input, result, c.expectedKey)
+			}
 		}
 	}
 }
