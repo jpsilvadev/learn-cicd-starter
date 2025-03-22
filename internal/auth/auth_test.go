@@ -44,7 +44,7 @@ func TestGetAPIKey(t *testing.T) {
 				t.Errorf("GetAPIKey(%v) unexpected error: %v", c.input, err)
 			}
 			if result != c.expectedKey {
-				t.Errorf("GetAPIKey(%v) = %v; want %v", c.input, result, c.expectedKey)asdad //temp breakage
+				t.Errorf("GetAPIKey(%v) = %v; want %v", c.input, result, c.expectedKey)
 		}
 	}
 }
