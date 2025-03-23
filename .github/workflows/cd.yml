@@ -24,8 +24,8 @@ jobs:
               run: scripts/buildprod.sh
     
             - name: Migrate DB
-              run: scrips/migrate.sh
-              
+              run: scrips/migrateup.sh
+
             - id: auth
               uses: google-github-actions/auth@v2
               with:
